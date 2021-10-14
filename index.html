@@ -1,4 +1,285 @@
-<html>
-<body><h1>HELLO</h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+
+    <!-- Timeline -->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+
+
+    <style>
+      ::-webkit-scrollbar{
+      display: none;
+      }
+      body,html{
+        overflow-x: hidden;
+        background-color: #dcdcdc;
+      }
+    </style>
+
+
+    <title>Notezy</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-family: 'Gemunu Libre', sans-serif; font-size: 28px;"><span class="navbar-brand ms-1 display-2"><span class="display-5">N<span><span class="display-6">otez<span><span class="display-4">y</span></a>
+        <div class="d-flex">
+          <button class="btn btn-outline-light rounded-pill mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</button>
+          <button class="btn btn-outline-light rounded-pill mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col-6 position-static" style="right: 25%;">
+        <img src="./images/pic3.png" alt="" width="90%">
+      </div>
+      <div class="col-6 position-absolute" style="left: 0px;  opacity: 0.9;">
+        <img src="./images/pic2.png" alt="" width="90%">
+      </div>
+      <div class="col-6 position-absolute" style="right: 0px; opacity: 0.9;">
+        <img src="./images/pic1.png" alt="" width="90%">
+      </div>
+    </div>
+
+    <div class="container-fluid mb-2 bg-warning">
+      <div class="row text-center pt-4 pb-sm-5 pb-md-4 pb-lg-5">
+        <h2 class="text-light">About</h2>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-8 col-lg-6 p-sm-1 ps-lg-2 pt-lg-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit accusamus, possimus reiciendis neque obcaecati dolore! Sed atque nobis eveniet ratione recusandae eligendi, cumque molestias eos? Necessitatibus quo iusto eius!
+          Quasi natus, fugiat pariatur tenetur, nostrum consequuntur et velit recusandae accusantium soluta commodi rem? Aut, asperiores officia? Dolor non, eum vel maxime ab ducimus est unde, velit veritatis modi vitae!
+          Voluptatem delectus consequatur, sint ullam dicta optio temporibus rem maiores aperiam quia laudantium. Recusandae, tempore accusamus officiis sit iste ut. Accusamus quaerat expedita fuga blanditiis incidunt sed cupiditate in consequuntur!
+          Culpa corporis sed voluptates obcaecati aspernatur quos porro unde iusto quae placeat, ea soluta repellendus expedita accusamus. Libero quasi, animi doloremque id neque accusantium delectus perspiciatis reiciendis ratione numquam nesciunt?
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-5 text-center d-flex align-items-center" style="right: 0px; opacity: 1;">
+          <img src="./images/pic4.png" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row d-flex h3 p-4 justify-content-center">
+        Website Authors
+      </div>
+      <div class="row d-flex justify-content-center">
+          <div class="col-6 col-lg-3 mx-lg-5">
+              <div class="our-team">
+                  <div class="pic">
+                      <img src="./images/sarthak3x3in.png">
+                      <ul class="social">
+                          <li><a href="#" class="fab fa-github"></a></li>
+                          <li><a href="#" class="fab fa-linkedin"></a></li>
+                      </ul>
+                  </div>
+                  <div class="team-content">
+                      <div class="team-info">
+                          <h3 class="title">Sarthak Keshari</h3>
+                          <span class="post">Full-stack Developer</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-6 col-lg-3 mx-lg-5">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="./images/m3x3in.png">
+                    <ul class="social">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-google-plus"></a></li>
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                    </ul>
+                </div>
+                <div class="team-content">
+                    <div class="team-info">
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div> 
+
+  <!-- Timeline -->
+  <div class="bg-white">
+    <div class="uk-container uk-padding bg-primary">
+        <div class="h4 py-4 text-white">Steps to make your notes accessible anywhere/anytime</div>
+        <div class="uk-timeline">
+            <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                    <span class="uk-badge shadow"><span uk-icon="check"></span></span>
+                </div>
+                <div class="uk-timeline-content">
+                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                        <div class="uk-card-header" onclick="document.getElementById('step1').classList.toggle('uk-display-block')">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <h4 class="uk-card-title"><time datetime="2020-07-08">Step 1</time></h4>
+                                <!-- <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span> -->
+                            </div>
+                        </div>
+                        <div class="uk-card-body" id="step1" style="display: none;">
+                          <p class="uk-text-success">Follow these steps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                    <span class="uk-badge shadow"><span uk-icon="check"></span></span>
+                </div>
+                <div class="uk-timeline-content">
+                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                        <div class="uk-card-header" onclick="document.getElementById('step2').classList.toggle('uk-display-block')">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <h4 class="uk-card-title"><time datetime="2020-07-07">Step 2</time></h4>
+                                <!-- <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span> -->
+                            </div>
+                        </div>
+                        <div class="uk-card-body" id="step2" style="display: none;">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-timeline-item">
+                <div class="uk-timeline-icon">
+                    <span class="uk-badge shadow"><span uk-icon="check"></span></span>
+                </div>
+                <div class="uk-timeline-content">
+                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                        <div class="uk-card-header" onclick="document.getElementById('step3').classList.toggle('uk-display-block')">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <h4 class="uk-card-title"><time datetime="2020-07-06">Step 3</time></h4>
+                                <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
+                            </div>
+                        </div>
+                        <div class="uk-card-body" id="step3" style="display: none;" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Contact Us  -->
+  <div class="py-4">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="mb-3">
+            <h3 class="">Contact Us</h3>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your comments/message here"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-dark">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-8 pt-2 col-sm-12 d-flex align-items-end justify-content-end">
+          <img src="./images/contact.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div> 
+  <hr>
+
+  <div class="d-flex justify-content-center row py-2">
+    <img src="./images/base_pic1.png" class="img-fluid col-4 p-0" alt="">
+    <img src="./images/base_pic2.png" class="img-fluid col-4 p-0" alt="">
+    <img src="./images/base_pic1.png" class="img-fluid col-4 p-0" alt="">
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <!-- <img src="./logo.jpeg" alt=""> -->
+        </a>
+        <span class="text-muted">&copy; 2021 Notezy, Github repository</span>
+      </div>
+  
+      <ul class="nav col-md-6 justify-content-end mt-0 list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><span uk-icon="icon: github; ratio: 1.5"></span></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><span uk-icon="icon: youtube; ratio: 1.5"></span></a></li>
+      </ul>
+    </footer>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
